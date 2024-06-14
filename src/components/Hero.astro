@@ -1,6 +1,7 @@
 ---
+import { Image } from "astro:assets"
+import eli from "../assets/eli.png"
 const personalImageAlt = "Elizabeth Denisse"
-const imgSrc = "/eli.png"
 import Container from "@/components/Container2.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import Badge from "@/components/Badge.astro"
@@ -10,9 +11,9 @@ import { Icon } from 'astro-icon/components';
   <div class="flex mb-4">
     <div class="avatar online">
       <div class="size-16 rounded-full shadow-lg flex">
-        <img 
-          src={imgSrc}
-          alt={personalImageAlt} />            
+        <Image 
+          src={eli}
+          alt={personalImageAlt} loading="eager" class="pointer-events-none" />            
       </div>        
     </div>
     <a 
