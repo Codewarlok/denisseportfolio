@@ -1,0 +1,45 @@
+---
+const personalImageAlt = "Elizabeth Denisse"
+const imgSrc = "/eli.png"
+import Container from "@/components/Container2.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import Badge from "@/components/Badge.astro"
+import { Icon } from 'astro-icon/components';
+---
+<Container class="pt-24 pb-24 md:pt-40 max-w-xl">
+  <div class="flex mb-4">
+    <div class="avatar online">
+      <div class="size-16 rounded-full shadow-lg flex">
+        <img 
+          src={imgSrc}
+          alt={personalImageAlt} />            
+      </div>        
+    </div>
+    <a 
+      href="https://www.linkedin.com/in/eliperezleon/"
+      target="_blank"
+      rel="noopener"
+      class="px-3 pt-4">
+      <Badge>Open to work</Badge>
+    </a>
+  </div>
+
+  <h1 class="text-slate-900 dark:text-white text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold flex flex-row gap-x-4 pb-4 md:pb-6 lg:pb-8 opacity-90">Hola, soy Eli</h1>
+  
+  <p class="text-gray-800 dark:text-white text-xl sm:text-2xl lg:text-3xl text-pretty opacity-90">Soy una <span class="text-blue-500  dark:text-blue-400 font-semibold">desarrolladora de software</span>  con 5 años de experiencia,  <span class="text-yellow-500  dark:text-yellow-300 font-semibold">Pythonista</span>, administrador de <span class="text-blue-500  dark:text-blue-400 font-semibold">SAP</span> y analísta de proyectos.</p>
+
+<nav class="flex gap-3 mt-6 flex-wrap">
+  <SocialPill href="https://www.linkedin.com/in/eliperezleon/">
+    <Icon name="line-md:linkedin" class="size-4 md:size-5" />
+    LinkedIn
+  </SocialPill>
+  <SocialPill href="https://github.com/DenisseBot">
+    <Icon name="line-md:github-loop" class="size-5 md:size-6" />
+    GitHub
+  </SocialPill>
+  <SocialPill href="mailto:eli.perezl@duocuc.cl">
+    <Icon name="line-md:email-twotone" class="size-5 md:size-6" />
+    Contáctame
+  </SocialPill>
+</nav>
+</Container>

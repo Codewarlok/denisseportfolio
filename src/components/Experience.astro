@@ -1,0 +1,47 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+
+const EXPERIENCE = [
+  {
+    date: 'Actualmente...',
+    title: 'Desarrollador RPA y analísta de proyectos',
+    company: 'Marval.',
+    description: 'Scrapping con herramientas de automatización Selenium. Manejo de herramientas de datos con Pandas, Numpy y APIs. Rocketbot y Power Apps.',    
+  },
+  {
+    date: '2023',
+    title: 'Soporte SAP y analísta de proyectos Jr.',
+    company: 'Marval.',
+    description: 'Manejo de Addons, SQL Server y módulos de sap a nivel administrador. Asesoría en plataformas tecnológicas y análisis de proyectos.',
+  },
+  {
+    date: "2020",
+    title: "Desarrollador Full Stack",
+    company: "Elun.",
+    description: "Desarrollador trainee con tecnologías y herramientas como Tailwind, Fastapi, Django, SQL, Flask, Github, Scrum.",
+  },
+  {
+    date: '2019',
+    title: 'Tutor Par Paedis',
+    company: 'DuocUC.',
+    description: 'Tutor de acompañamiento académico y psicopedagógico para estudiantes con necesidades educativas especiales.',
+  },
+  {
+    date: '2019',
+    title: 'Práctica profesional',
+    company: 'Biobusiness.',
+    description: 'Desarrollador web Django Framework y documentador.',
+  },
+];
+---
+
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

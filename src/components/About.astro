@@ -1,0 +1,27 @@
+---
+const personalImageAlt = "Denisse Lyon"
+const imgSrc = "/stand2.webp"
+
+---
+<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-blue-50 md:flex-row">
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-amber-500 dark:[&>p>strong]:text-yellow-400 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+    <p>
+      Mi nombre es Denisse, soy una persona comprometida con los deberes adquiridos, con una gran capacidad de resiliencia y adaptación, destacadas habilidades de liderazgo, y una actitud <strong>dinámica, diligente y colaborativa</strong>.</p>
+
+    <p>
+      Mis amigos me llaman Eli, vivo en Viña del Mar y en mi tiempo libre gusto regalonear a mis gatos, entrenar a mis pokémons, explorar cafeterías de especialidad y compartir juegos de mesa junto a mis amigos como <strong> catan, carcassone, magic the gathering y diversos juegos de rol</strong>.</p>
+
+  </div>
+
+<!--   <img width="200" height="200" src={imgSrc} alt={personalImageAlt} class="order-1 md:order-2 object-cover w-64 h-full md:h-96 lg:h-auto p-1  rotate-3 lg:p-2 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 transition duration-500 md:scale-110  md:group-hover:scale-105 lg:scale-110 lg:group-hover:scale-105" style="object-position: 50% 50%" loading="lazy"/> -->
+
+
+  <div class="w-full md:w-1/2 order-1 md:order-2 flex flex-col items-center group">
+    <div class="ease-in-out 
+    w-64 h-full md:h-96 lg:h-auto p-1 transition duration-500 md:scale-110  md:group-hover:scale-105 lg:scale-110 lg:group-hover:scale-105 transform shadow-xl overflow-clip rotate-3 lg:p-2 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20 sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800">
+      <img width="200" height="200" src={imgSrc} alt={personalImageAlt} class="object-cover w-64 h-full md:h-96 lg:h-auto p-1 transition duration-500 md:scale-110  md:group-hover:scale-105 lg:scale-110 lg:group-hover:scale-105" style="object-position: 50% 50%" loading="lazy"/>      
+    </div>    
+  </div>  
+
+</article>

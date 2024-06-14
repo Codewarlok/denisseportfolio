@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout2.astro';
+import Container from '../components/Container2.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import Hero from '@/components/Hero.astro';
+import About from '@/components/About.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<Layout title="Eli Developer"
+description="Contrata a Elizabeth para crear tu aplicación web o software.">
+  <main class="px-4">
+    <Hero />
+
+    <Container id="experiencia" class="mb-28">
+      <h2 class="text-black dark:text-white opacity-90 text-2xl font-bold mb-10 flex gap-x-2">
+        <Icon name="line-md:cloud-tags-loop" class="size-7 md:size-8 lg:size-9" />
+        Experiencia</h2>
+      <Experience />
+    </Container>
+
+    <Container id="proyectos" class="mb-28">
+      <h2 class="text-black dark:text-white opacity-90 text-2xl font-bold mb-10 flex gap-x-2 items-center">
+        <Icon name="line-md:cog-loop" class="size-7 md:size-8" />
+        Proyectos</h2>
+      <Projects />
+    </Container>
+    
+    <Container id="sobre-mi" class="">
+      <h2 class="text-black dark:text-white opacity-90 text-2xl flex font-semibold mb-10 gap-x-2 items-center">
+        <Icon name="line-md:account-alert-loop" class="size-7 md:size-8 lg:size-9" />
+        ¿Quién soy?</h2>
+        <About />
+    </Container>
+  </main>
+</Layout>
