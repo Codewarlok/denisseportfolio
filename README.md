@@ -1,1 +1,6 @@
-#Porfolio desarrollado con tailwindcss y astrojs
+#Porfolio desarrollado con tailwindcss, astrojs y bun.
+
+<div align="center">
+<img src="./public/porfolio.webp">
+<p></p>
+</div>

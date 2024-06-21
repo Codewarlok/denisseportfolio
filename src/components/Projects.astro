@@ -6,6 +6,8 @@ import LinkButton from "./LinkButton.astro"
 import { Icon } from 'astro-icon/components'
 import Rocketbot from "./icons/Rocket.astro"
 import Sap from "./icons/Sap.astro"
+import { Image } from "astro:assets"
+import pic from "../assets/svgl.webp"
 
 const TAGS = {
   SQL: {
@@ -38,26 +40,20 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: "[Nombre] - Un bello roboc",
+    title: "Descarga Boletas Honorarios SII",
     description: "Robot que se encarga de buscar el respaldo tributario de un documento en el SII chile.",
-    link: "#",
-    github: "#",
     image: "/projects/svgl.webp",
-    tags: [TAGS.ROCKETBOT, TAGS.TAILWIND, TAGS.PYTHON]
+    tags: [TAGS.ROCKETBOT, TAGS.TAILWIND, TAGS.PYTHON],
   },
   {
-    title: "[Nombre] - Un bello roboc",
+    title: "Scrapping Outlook y Descarga de Adjuntos",
     description: "Este robot se encarga de obtener los correos electronicos, por keyword que se obtiene en el cuerpo del asunto y extrae los documentos adjuntos del mismo. Los datos obtenidos los almacena en una base de datos.",
-    link: "#",
-    github: "#",
     image: "/projects/svgl.webp",
     tags: [TAGS.ROCKETBOT, TAGS.SQL, TAGS.PYTHON]
   },
   {
-    title: "[Nombre] - Un bello roboc",
+    title: "Licencias SAP",
     description: "Este robot se encarga de consultar las licencias de los usuarios sap en tiempo real, llena datos con su nombre y cantidad de documentos con usuarios. Contrastando la informacion con las licencias compradas.",
-    link: "#",
-    github: "#",
     image: "/projects/svgl.webp",
     tags: [TAGS.ROCKETBOT, TAGS.SAP, TAGS.PYTHON]
   },
