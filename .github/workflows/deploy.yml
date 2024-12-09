@@ -38,7 +38,9 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "eliperezleon"
-          entrypoint: "@std/http/file-server"
+
+          entrypoint: "https://jsr.io/@std/http/1.0.12/file_server.ts"
+
           root: "dist"
           
           
