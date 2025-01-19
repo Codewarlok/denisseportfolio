@@ -6,6 +6,8 @@ import Container from "@/components/Container2.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import Badge from "@/components/Badge.astro"
 import { Icon } from 'astro-icon/components';
+const currentYear = new Date().getFullYear();
+const years = currentYear - 2019;
 ---
 <Container class="pt-24 pb-24 md:pt-40 max-w-xl">
   <div class="flex mb-4">
@@ -27,7 +29,7 @@ import { Icon } from 'astro-icon/components';
 
   <h1 class="text-slate-900 dark:text-white text-4xl sm:text-5xl lg:text-6xl tracking-tight font-bold flex flex-row gap-x-4 pb-4 md:pb-6 lg:pb-8 opacity-90">Hola, soy Eli</h1>
   
-  <p class="text-gray-800 dark:text-white text-xl sm:text-2xl lg:text-3xl text-pretty opacity-90">Soy una <span class="text-blue-500  dark:text-blue-400 font-semibold">desarrolladora de software</span>  con 6 años de experiencia,  <span class="text-yellow-500  dark:text-yellow-300 font-semibold">Pythonista</span>, <span class="text-blue-500  dark:text-blue-400 font-semibold">desarrolladora de RPA</span>, administrador de <span class="text-blue-500  dark:text-blue-400 font-semibold">SAP</span> y analista de proyectos.</p>
+  <p class="text-gray-800 dark:text-white text-xl sm:text-2xl lg:text-3xl text-pretty opacity-90">Soy una <span class="text-blue-500  dark:text-blue-400 font-semibold">desarrolladora de software</span>  con {years} años de experiencia,  <span class="text-yellow-500  dark:text-yellow-300 font-semibold">Pythonista</span>, <span class="text-blue-500  dark:text-blue-400 font-semibold">desarrolladora de RPA</span>, administrador de <span class="text-blue-500  dark:text-blue-400 font-semibold">SAP</span> y analista de proyectos.</p>
 
 <nav class="flex gap-3 mt-6 flex-wrap">
   <SocialPill href="https://www.linkedin.com/in/eliperezleon/">
